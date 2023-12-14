@@ -592,20 +592,25 @@ footer{
     .nav-menu.responsive{
         left: 0;
     }
-    .nav-menu{
+    .nav-menu {
         position: fixed;
-        top: 80px;
+        top: 50px;
         left: -100%;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(20px);
-        width: 100%;
-        min-height: 450px;
-        height: 90vh;
-        transition: .3s;
-    }
+        width: 20%;
+        min-height: 300px;
+        height: 40vh;
+        transition: left 0.3s ease;
+      }
+      
+      .nav-menu.active {
+        left: 0;
+      }
     .nav_menu_list{
         flex-direction: column;
     }

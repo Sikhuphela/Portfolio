@@ -125,3 +125,17 @@ function scrollToContact() {
       contactSection.scrollIntoView({ behavior: 'smooth' });
   }
 }
+document.addEventListener("DOMContentLoaded", function() {
+  var navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach(function(navLink) {
+    navLink.addEventListener("click", function() {
+      toggleNavMenu();
+    });
+  });
+});
+
+function toggleNavMenu() {
+  var navMenu = document.getElementById("myNavMenu");
+  navMenu.classList.toggle("active");
+}
