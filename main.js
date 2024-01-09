@@ -93,7 +93,8 @@ function validateForm() {
   var message = document.getElementById('message').value;
 
   // Validate name: Allow only alphabets
-  var nameRegex = /^[a-zA-Z]+$/;
+  var nameRegex = /^[a-zA-Z\s]+$/;
+
   if (name === '' || !name.match(nameRegex)) {
       alert('Please enter a valid name.');
       return false;

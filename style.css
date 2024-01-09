@@ -248,7 +248,7 @@ nav{
    gap: 5px;
    text-decoration: none;
    color: var(--text-color-second);
-   background: var(--color-white);
+   background: var(--second-color);
    border-radius: 30px;
    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
@@ -280,7 +280,7 @@ nav{
     margin-bottom: 10px;
 }
 .top-header span{
-    color: #999;
+    color: #4a4848;
 }
 h3{
     font-size: 20px;
@@ -434,7 +434,9 @@ h3{
     font-weight: 500;
     margin-bottom: 20px;
 }
-
+.layer p{
+    color: #fff;
+}
 .layer a {
     margin-top: 20px;
     color: #ff004f;
