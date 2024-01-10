@@ -412,6 +412,30 @@ h3{
 
 
 /* ----- CONTACT BOX ----- */
+.top-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 60%;
+    background: var(--color-white);
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 20px;
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-left: 250px;
+}
+
+.contact-box span {
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+}
 .contact-info{
     position: relative;
     display: flex;
