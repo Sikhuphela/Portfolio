@@ -23,7 +23,7 @@ function myMenuFunction(){
   }
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText",{
-    strings : ["Full Stack Developer","Web Developer","Software Developer"],
+    strings : ["Software Developer Intern"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
@@ -139,4 +139,10 @@ document.addEventListener("DOMContentLoaded", function() {
 function toggleNavMenu() {
   var navMenu = document.getElementById("myNavMenu");
   navMenu.classList.toggle("active");
+}
+function downloadCV() {
+  var link = document.createElement('a');
+  link.href = 'CV/Aphiwe Sikhuphela Professional CV.pdf';
+  link.download = 'Aphiwe Sikhuphela Professional CV.pdf';
+  link.click();
 }

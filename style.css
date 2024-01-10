@@ -384,6 +384,7 @@ h3{
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
+    color: var(--color-white);
 }
 .layer p{
     color: #fff;
