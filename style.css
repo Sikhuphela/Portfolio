@@ -277,7 +277,7 @@ nav{
 .top-header h1{
     font-weight: 600;
     color: var(--text-color-second);
-    margin-bottom: 10px;
+    margin-bottom: 70px;
 }
 .top-header span{
     color: #4a4848;
@@ -300,6 +300,7 @@ h3{
     background: var(--color-white);
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     border-radius: 20px;
+   
 }
 .about-info p{
     text-align: center;
@@ -347,18 +348,23 @@ h3{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    margin-top: 10px;
+    height: 300px; /* Set a fixed height for the images */
 }
 
 .work img {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
+    object-fit: cover; /* Maintain aspect ratio */
     transition: transform 0.5s;
 }
 
@@ -366,7 +372,7 @@ h3{
     width: 100%;
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
-    border-radius: 10px; /* No need to repeat, already set for .work */
+    border-radius: 10px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -386,9 +392,11 @@ h3{
     margin-bottom: 20px;
     color: var(--color-white);
 }
-.layer p{
+
+.layer p {
     color: #fff;
 }
+
 .layer a {
     margin-top: 20px;
     color: #ff004f;
@@ -405,6 +413,12 @@ h3{
 .work:hover img {
     transform: scale(1.1);
 }
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .work:hover .layer {
     height: 100%;
@@ -415,6 +429,7 @@ h3{
 .top-header {
     text-align: center;
     padding: 20px;
+    margin-top: 100px;
 }
 
 .contact-box {
@@ -489,7 +504,7 @@ h3{
     width: 50%;
     height: 55px;
     background: transparent;
-    border: 2px solid #AAA;
+    border: 2px solid #555454;
     border-radius: 10px;
     padding-inline: 20px;
     outline: none;
@@ -498,7 +513,7 @@ textarea{
     width: 100%;
     height: 250px;
     background: transparent;
-    border: 2px solid #AAA;
+    border: 2px solid #555454;
     border-radius: 10px;
     padding: 15px 20px;
     outline: none;
